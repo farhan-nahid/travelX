@@ -1,10 +1,16 @@
+/* import google fonts */
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* reset browser default margin */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* website main css */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -117,6 +123,12 @@ input[type="number"] {
   cursor: pointer;
   border-radius: 10px;
 }
+
+/* 
+=================================================
+      some media query of this website
+=================================================
+*/
 
 @media only screen and (max-width: 1050px) {
   .container {

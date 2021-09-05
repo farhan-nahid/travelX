@@ -11,43 +11,60 @@
     <main class="container">
       <section id="planet__container">
         <h1>Welcome To TravelX</h1>
+
+        <!-- Journey To Moon 🌒 -->
+
         <div class="planet">
           <label for="">Journey To Moon 🌒</label>
           <input type="number" name="moon" value="0" id="moon" disabled />
           <div class="button__and__cost">
             <div>
-              <button class="plus__button">
+              <button
+                onclick="ticketQuantity('moon','plus')"
+                class="plus__button"
+              >
                 <i class="fas fa-plus"></i>
               </button>
-              <button class="minus__button">
+              <button
+                onclick="ticketQuantity('moon','minus')"
+                class="minus__button"
+              >
                 <i class="fas fa-minus"></i>
               </button>
             </div>
             <div>
-              <h5>Cost: $20</h5>
+              <h5>Cost: $<span id="moon__price">20</span></h5>
             </div>
           </div>
         </div>
+
+        <!-- Journey To Mars 🌏👨‍✈️ -->
 
         <div class="planet">
           <label for="">Journey To Mars 🌏👨‍✈️</label>
           <input type="number" name="mars" value="0" id="mars" disabled />
           <div class="button__and__cost">
             <div>
-              <button class="plus__button">
+              <button
+                onclick="ticketQuantity('mars','plus')"
+                class="plus__button"
+              >
                 <i class="fas fa-plus"></i>
               </button>
-              <button class="minus__button">
+              <button
+                onclick="ticketQuantity('mars','minus')"
+                class="minus__button"
+              >
                 <i class="fas fa-minus"></i>
               </button>
             </div>
             <div>
-              <h5>Cost: $20</h5>
+              <h5>Cost: $<span id="mars__price">30</span></h5>
             </div>
           </div>
         </div>
         <hr />
-        <h3 id="total__cost">Total: $123</h3>
+        <h3>Total: $<span id="total__cost">50</span></h3>
       </section>
     </main>
     <!-- font awesome js -->
