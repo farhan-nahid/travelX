@@ -8,7 +8,53 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <main></main>
+    <main class="container">
+      <section id="planet__container">
+        <h1>Welcome To TravelX</h1>
+        <div class="planet">
+          <label for="">Journey To Moon 🌒</label>
+          <input type="number" name="moon" value="0" id="moon" disabled />
+          <div class="button__and__cost">
+            <div>
+              <button class="plus__button">
+                <i class="fas fa-plus"></i>
+              </button>
+              <button class="minus__button">
+                <i class="fas fa-minus"></i>
+              </button>
+            </div>
+            <div>
+              <h5>Cost: $20</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="planet">
+          <label for="">Journey To Mars 🌏👨‍✈️</label>
+          <input type="number" name="mars" value="0" id="mars" disabled />
+          <div class="button__and__cost">
+            <div>
+              <button class="plus__button">
+                <i class="fas fa-plus"></i>
+              </button>
+              <button class="minus__button">
+                <i class="fas fa-minus"></i>
+              </button>
+            </div>
+            <div>
+              <h5>Cost: $20</h5>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <h3 id="total__cost">Total: $123</h3>
+      </section>
+    </main>
+    <!-- font awesome js -->
+    <script
+      src="https://kit.fontawesome.com/c58d26cb9d.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- script file -->
     <script src="./app.js"></script>
   </body>

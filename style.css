@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: rgba(0, 0, 0, 0.5) url(./crew.jpg);
+  background-repeat: repeat;
+  height: 100vh;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+main {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#planet__container {
+  background-color: white;
+  opacity: 0.8;
+  padding: 20px 30px 20px 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: rgb(67, 115, 156);
+  font-size: 35px;
+}
+
+h5,
+h3,
+hr {
+  color: rgb(82, 78, 78);
+}
+
+h3 {
+  margin-top: 10px;
+  text-align: right;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.planet {
+  margin: 20px 0;
+}
+
+.planet label {
+  font-size: 14px;
+  display: block;
+  font-weight: 700;
+  color: rgb(82, 78, 78);
+}
+
+.planet input {
+  border: 2px solid rgba(12, 110, 201, 0.719);
+  padding: 5px 15px;
+  width: 350px;
+  border-radius: 10px;
+  outline: none;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+.planet input:focus {
+  border: 3px solid rgba(12, 89, 161, 0.719);
+  border-radius: 10px;
+}
+
+.button__and__cost {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button__and__cost .plus__button {
+  margin-right: 10px;
+}
+
+.plus__button {
+  padding: 5px 15px;
+  background-color: lightgreen;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+  font-weight: 900;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.minus__button {
+  padding: 5px 15px;
+  background-color: lightsalmon;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+  font-weight: 900;
+  cursor: pointer;
+  border-radius: 10px;
+}
