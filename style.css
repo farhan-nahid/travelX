@@ -98,7 +98,7 @@ input[type="number"] {
 
 .plus__button {
   padding: 5px 15px;
-  background-color: lightgreen;
+  background-color: #90ee90;
   border: 0;
   outline: 0;
   font-size: 15px;
@@ -109,11 +109,46 @@ input[type="number"] {
 
 .minus__button {
   padding: 5px 15px;
-  background-color: lightsalmon;
+  background-color: #ffa07a;
   border: 0;
   outline: 0;
   font-size: 15px;
   font-weight: 900;
   cursor: pointer;
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  main {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .planet input {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 388px) {
+  .planet input {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 288px) {
+  .planet input {
+    width: 150px;
+  }
 }
